@@ -1,0 +1,32 @@
+<Window x:Class="ClientApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Client" Height="200" Width="360"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <Button x:Name="btnLamp"
+                Content="Lamba Butonu"
+                Grid.Column="0"
+                Margin="8"
+                FontSize="15"
+                FontWeight="Bold"
+                Background="DimGray"
+                Foreground="White"
+                Click="btnLamp_Click" />
+
+
+        <Button x:Name="btnText"
+                Content="Text Butonu"
+                Grid.Column="1"
+                Margin="8"
+                FontSize="15"
+                FontWeight="Bold"
+                Click="btnText_Click" />
+    </Grid>
+</Window>
